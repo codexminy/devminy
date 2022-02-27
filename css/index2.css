@@ -620,6 +620,10 @@ video {
     font-size: 1.2vw;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* footer btn */
 footer {
     /* background-color: tomato; */
