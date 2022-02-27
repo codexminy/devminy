@@ -237,4 +237,7 @@ emaila.addEventListener('click', (e) => {
     li.setAttribute('class','ment2');
     li.style.width = '11vw';
     chatul.append(li);
+
+    var objUl = document.getElementById("chatul");
+    objUl.scrollTop = objUl.scrollHeight;
 });
