@@ -1,0 +1,708 @@
+@charset "utf-8";
+
+body {
+    background: linear-gradient( to right , RGB(81,105,216), RGB(152,106,188) );
+    /* width: 100vw; */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center; /*세로에서 가운데에 요소를 배치하겠다*/
+    
+}
+
+#wrap {
+    display: flex;
+    justify-content: center; /* 가로에서 가운데에 요소(자식요소)를 배치하겠다.*/
+    align-items: center; /*세로에서 가운데에 요소를 배치하겠다*/
+    background-color:transparent;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    /* margin-top: 5%; */
+}
+
+#phone {
+    /* top: 50%; */
+    left: 50%;
+    width: 600px;
+    height: 100vh;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0;
+   
+}
+/* header */
+#chatheader {
+    width: 100%;
+    height: 7vh;
+    /* background-color: RGB(71,76,253); */
+    background: linear-gradient( to right , RGB(68,79,254), RGB(91,67,254) );
+    border-radius: 10px 10px 0 0 ;
+    border: none;
+    box-shadow: 0px 1px 1px 1px lightgray;
+    display: flex;
+}
+
+#angle > i {
+    width: 3vw;
+    height: 7vh;
+    font-size: 2vw;
+    color: RGB(142,147,249);
+    line-height: 7vh;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+
+#chattitle {
+    height: 7vh;
+    font-size: 1.4vw;
+    color: RGB(142,147,249);
+    line-height: 7vh;
+    margin-left: 1vw;
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+}
+
+ul > li {
+    width : 100%;
+    margin-bottom: 18px;
+}
+
+#today {
+    width: 7vw;
+    height: 4vh;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px ;
+    line-height: 4vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    color : white;
+    /* 애니메이션 */
+    animation: todayname 2s;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+
+@keyframes todayname {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.litoday {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.line {
+    height: 4ch;
+}
+
+.left {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    line-height: 4vh;
+}
+
+#hello {
+    width: 18vw;
+    border-radius: 10px 10px 10px 0;
+    /* background-color: RGB(71,76,253); */
+    background-color: RGB(235,236,241);
+    color: black;
+    animation: helloname 3s;
+    box-shadow: 1px 1px 1px 1px lightgray;
+}
+
+@keyframes helloname {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#hello2 {
+    width: 17vw;
+    border-radius: 10px 10px 10px 0;
+    /* background-color: RGB(71,76,253); */
+    background-color: RGB(235,236,241);
+    color: black;
+    animation: helloname 5s;
+    box-shadow: 1px 1px 1px 1px lightgray;
+}
+
+/* chat */
+section {
+    height: 75vh;
+}
+
+
+#chatul {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 580px;
+    height: 75vh;
+
+}
+
+/* 스크롤바 설정*/
+#chatul::-webkit-scrollbar{
+    width: 6px;
+}
+
+/* 스크롤바 막대 설정*/
+#chatul::-webkit-scrollbar-thumb{
+    height: 17%;
+    /* background-color: rgba(223, 218, 218, 0.612); */
+    /* 스크롤바 둥글게 설정    */
+    border-radius: 10px;    
+}
+
+/* 스크롤바 뒷 배경 설정*/
+#chatul::-webkit-scrollbar-track{
+    background-color: rgba(0,0,0,0);
+}
+
+
+/* 스크롤바 설정*/
+.type2::-webkit-scrollbar{
+    width: 6px;
+}
+
+/* 스크롤바 막대 설정*/
+.type2::-webkit-scrollbar-thumb{
+    height: 17%;
+    background-color: rgba(33,133,133,1);
+    border-radius: 10px;  
+}
+
+.right {
+    width: 95%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+
+
+}
+
+.blank {
+    background-color: red;
+}
+
+.menuright {
+    width: 12vw;
+    border: 1px solid ;
+    text-align: center;
+    line-height: 4vh;
+    border-radius: 10px 10px 0px 10px ;
+    cursor: pointer;
+    background-color: RGB(71,76,253);
+    color: white;
+    margin-right: 0;
+    box-shadow: -1px 1px 1px 1px lightgray;
+}
+
+/*about me*/
+.emo {
+    width: 10vw;
+    height: 20vh;
+}
+
+#chartdiv > span {
+    font-weight: bold;
+    color: RGB(121,95,176) ;
+}
+.chart1 {
+    position: relative;
+    display:inline-block;
+    width: 4vw;
+    height: 8vh;
+    border-radius: 50%;
+    transition: 0.3s;
+    /* background: conic-gradient(RGB(247,204,7) 0% 100%); */
+   
+}
+
+.chart2 {
+    position: relative;
+    display:inline-block;
+    width: 4vw;
+    height: 8vh;
+    border-radius: 50%;
+    transition: 0.3s;
+    /* background: conic-gradient(RGB(236,19,46) 0% 100%); */
+   
+}
+
+.chart3 {
+    position: relative;
+    display:inline-block;
+    width: 4vw;
+    height: 8vh;
+    border-radius: 50%;
+    transition: 0.3s;
+    /* background: conic-gradient(RGB(58,199,59) 0% 100%); */
+}
+
+
+.chartcenter {
+  background: #fff;
+  display : block;
+  position: absolute;
+  top:50%; left:50%;
+  width:3vw; height:6vh;
+  border-radius: 50%;
+  text-align:center; line-height: 6vh;
+  font-size:1vw;
+  transform: translate(-50%, -50%);
+}
+
+.aboutmeli {
+    display: none;
+}
+
+#aboutmediv{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.chartdiv {
+    width: 15vw;
+    height: 20vh;
+    margin-top: 2vh;
+    margin-right: 10vw;
+}
+
+.chartdiv > div {
+    margin-top: 2vh;
+}
+
+#ment {
+    width: 23vw;
+    border-radius: 10px 10px 10px 0;
+    background-color: RGB(235,236,241);
+    color: black;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    text-align: left;
+    line-height: 4vh;
+    padding-left: 0.5vw;
+}
+
+/* skills */
+#skillsli {
+    display: none;
+}
+
+@keyframes p-5{from{width:0}to{width:5%}}
+@keyframes p-10{from{width:0}to{width:10%}}
+@keyframes p-15{from{width:0}to{width:15%}}
+@keyframes p-20{from{width:0}to{width:20%}
+}@keyframes p-25{from{width:0}to{width:25%}}
+@keyframes p-30{from{width:0}to{width:30%}}
+@keyframes p-35{from{width:0}to{width:35%}}
+@keyframes p-40{from{width:0}to{width:40%}}
+@keyframes p-45{from{width:0}to{width:45%}}
+@keyframes p-50{from{width:0}to{width:50%}}
+@keyframes p-55{from{width:0}to{width:55%}}
+@keyframes p-60{from{width:0}to{width:60%}}
+@keyframes p-65{from{width:0}to{width:65%}}
+@keyframes p-70{from{width:0}to{width:70%}}
+@keyframes p-75{from{width:0}to{width:75%}}
+@keyframes p-80{from{width:0}to{width:80%}}
+@keyframes p-85{from{width:0}to{width:85%}}
+@keyframes p-90{from{width:0}to{width:90%}}
+@keyframes p-95{from{width:0}to{width:95%}}
+@keyframes p-100{from{width:0}to{width:100%}}
+
+.skillli.p-5{width:5%;animation:p-5 .1s}
+.skillli.p-10{width:5%;animation:p-10 .2s}
+.skillli.p-15{width:15%;animation:p-15 .3s}
+.skillli.p-20{width:20%;animation:p-20 .4s}
+.skillli.p-25{width:25%;animation:p-25 .5s}
+.skillli.p-30{width:30%;animation:p-30 .6s}
+.skillli.p-35{width:35%;animation:p-35 .7s}
+.skillli.p-40{width:40%;animation:p-40 .8s}
+.skillli.p-45{width:45%;animation:p-45 .9s}
+.skillli.p-50{width:50%;animation:p-50 1s}
+.skillli.p-55{width:55%;animation:p-55 1.1s}
+.skillli.p-60{width:60%;animation:p-60 1.2s}
+.skillli.p-65{width:65%;animation:p-65 1.3s}
+.skillli.p-70{width:70%;animation:p-70 1.4s}
+.skillli.p-75{width:75%;animation:p-75 1.5s}
+.skillli.p-80{width:80%;animation:p-80 1.6s}
+.skillli.p-85{width:85%;animation:p-85 1.7s}
+.skillli.p-90{width:90%;animation:p-90 1.8s}
+.skillli.p-95{width:95%;animation:p-95 1.9s}
+.skillli.p-100{width:100%;animation:p-100 2s}
+
+.skillli.p-5::before{content:"5%"}
+.skillli.p-10::before{content:"10%"}
+.skillli.p-15::before{content:"15%"}
+.skillli.p-20::before{content:"20%"}
+.skillli.p-25::before{content:"25%"}
+.skillli.p-30::before{content:"30%"}
+.skillli.p-35::before{content:"35%"}
+.skillli.p-40::before{content:"40%"}
+.skillli.p-45::before{content:"45%"}
+.skillli.p-50::before{content:"50%"}
+.skillli.p-55::before{content:"55%"}
+.skillli.p-60::before{content:"60%"}
+.skillli.p-65::before{content:"65%"}
+.skillli.p-70::before{content:"70%"}
+.skillli.p-75::before{content:"75%"}
+.skillli.p-80::before{content:"80%"}
+.skillli.p-85::before{content:"85%"}
+.skillli.p-90::before{content:"90%"}
+.skillli.p-95::before{content:"95%"}
+.skillli.p-100::before{content:"100%"}
+
+.percent-indicator .per-0::before{content:'0%'}
+.percent-indicator .per-20::before{content:'20%'}
+.percent-indicator .per-40::before{content:'40%'}
+.percent-indicator .per-60::before{content:'60%'}
+.percent-indicator .per-80::before{content:'80%'}
+.percent-indicator .per-100::before{content:'100%'}
+
+
+*, *::before, *::after {
+  box-sizing: border-box
+}
+
+.graph-wrapper {
+  position: relative;
+  padding:25px;
+  /* border:1px solid #aaa; */
+  max-width:20vw;
+  /* margin:auto; */
+}
+
+.graph-wrapper h1 {
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  top:-7px;
+  margin:0;
+  margin-bottom:15px;
+  margin-top: 10px;
+  padding:0 10px;
+  font-size:30px;
+  background:#fff;
+  line-height:30px;
+  color: rgb(121, 95, 176);
+}
+
+.percent-indicator {
+  position:absolute;
+  top:0;
+  right:25px;
+  left:25px;
+  bottom:0;
+  display:flex;
+  justify-content: space-between;
+  width:calc(100% - 50px);
+  padding:50px 20px;
+}
+
+.percent-indicator div {
+  position:relative;
+  width:0;
+  margin-left:-1px;
+  border-left:1px dashed rgb(161, 140, 206);
+}
+
+.percent-indicator .per-0 {
+  transform: translateX(1px)
+}
+
+.percent-indicator div::before, .percent-indicator div::after {
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  padding-bottom:5px;
+  font-size:16px;
+  line-height:16px;
+  background:#fff;
+  color: rgb(161, 140, 206);
+}
+
+.percent-indicator div::after {
+  top:21px
+}
+
+/* .percent-indicator .per-0::after {
+  content:'Bronze'
+}
+
+.percent-indicator .per-20::after {
+  content:'Silver'
+}
+
+.percent-indicator .per-40::after {
+  content:'Gold'
+}
+
+.percent-indicator .per-60::after {
+  content:'Platinum'
+}
+
+.percent-indicator .per-80::after {
+  content:'Diamond'
+}
+
+.percent-indicator .per-100::after {
+  content:'Challenger'
+} */
+
+.graph {
+  position: relative;
+  margin:100px auto;
+  padding:0 20px;
+  list-style:none;
+  z-index: 2
+}
+
+.skillli {
+  margin-bottom:5px;
+  padding:10px 5px;
+  background:#000;
+  color:#fff;
+  text-align: left
+}
+
+.skillli::before,
+.skillli:hover::after {
+  display:none
+}
+
+.skillli::after,
+.skillli:hover::before {
+  display:block
+}
+
+.skillli.item1::after {
+  content:"JAVA"
+}
+
+.skillli.item2::after {
+  content:"SPRING"
+}
+
+.skillli.item3::after {
+  content:"ORACLE"
+}
+
+.skillli.item4::after {
+  content:"JAVASCRIPT"
+}
+
+.skillli.item5::after {
+  content:"CSS"
+}
+
+.skillli.item6::after {
+    content:"HTML"
+  }
+
+.skillli {
+    background: linear-gradient( to right , RGB(81,105,216), RGB(152,106,188) );
+}
+
+@media screen and (max-width:640px) {
+  .percent-indicator div::after {
+    display:none
+  }
+}
+
+/* portfoliomenu */
+#portfoliomenu {
+    display: none;
+    width: 90%;
+}
+
+#portfoliomenu > ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ment2 {
+    width: 16vw;
+    border-radius: 10px 10px 10px 0;
+    background-color: RGB(235,236,241);
+    color: black;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    text-align: left;
+    line-height: 4vh;
+    padding-left: 0.5vw;
+    animation: ment2 0.5s;
+}
+
+
+@keyframes ment2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+#oneteampos {
+    width: 25vw;
+    display: none;
+}
+
+#oneteampos > ul {
+    padding: 0;
+}
+
+#oneteampos > ul > li:last-child {
+    width: 20vw;
+    border-radius: 10px 10px 10px 0;
+    background-color: RGB(235,236,241);
+    color: black;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    text-align: left;
+    line-height: 4vh;
+    padding-left: 0.5vw;
+    animation: ment2 0.5s;
+}
+
+#oneteampos > ul > li:nth-child(2) {
+    width: 20vw;
+    border-radius: 10px 10px 10px 0;
+    background-color: RGB(235,236,241);
+    color: black;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    text-align: left;
+    line-height: 4vh;
+    padding-left: 0.5vw;
+    animation: ment2 0.5s;
+}
+
+#oneteampos > ul > li > img {
+    width: 15vw;
+    margin-top: 10px;
+    
+}
+
+/* ring */
+
+
+video {
+    width: 100%;
+}
+
+/*contact*/
+#contactli {
+    display: none;
+    width: 4vw;
+    border-radius: 10px 10px 10px 0;
+    background-color: RGB(235,236,241);
+    color: black;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    text-align: left;
+    line-height: 4vh;
+    padding-left: 0.5vw;
+    animation: ment2 0.5s;
+    font-size: 1.2vw;
+}
+
+/* footer btn */
+footer {
+    /* background-color: tomato; */
+    width: 100%;
+    height: 18vh;
+    border-radius: 0 0 10px 10px ;
+    /* grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    animation: footername 7s;
+   
+}
+
+#menuleft {
+    width: 10%;
+    flex: 1;
+}
+
+#menu {
+    width: 90%;
+}
+#menu > ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menuicon {
+    width: 12vw;
+    border: 1px solid RGB(145,138,138);
+    text-align: center;
+    line-height: 4vh;
+    border-radius: 10px 10px 10px 10px ;
+    cursor: pointer;
+    background-color: white;
+    color: RGB(145,138,138);
+    margin-left: 0.1vw;
+    /* 그림자 */
+    box-shadow: 1px 1px 1px 1px lightgray;
+}
+
+@keyframes footername {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* 메뉴버튼 호버 */
+.menuicon:hover {
+    background-color: RGB(71,76,253);
+    color : white;
+}
+
+
+@media (max-width: 767px){
+    body {
+        font-size: 0.5vw;
+    }
+	/* //모바일 */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 0.8vw;
+    }
+    /* // 테블릿 세로 */
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        font-size: 0.8vw;
+    }
+    /* // 테블릿 가로 */
+}
+
+@media (min-width: 1200px) {
+    /* // 데스크탑 일반 */
+    body {
+        font-size: 0.8vw;
+    }
+}
