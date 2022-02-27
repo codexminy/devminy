@@ -218,6 +218,8 @@ contact.addEventListener('click', (e) => {
     li2.style.width = '9vw';
     chatul.append(li);
     chatul.append(li2);
+    var objUl = document.getElementById("chatul");
+    objUl.scrollTop = objUl.scrollHeight;
 });
 
 const emaila = document.getElementById("emaila");
@@ -238,6 +240,7 @@ emaila.addEventListener('click', (e) => {
     li.style.width = '11vw';
     chatul.append(li);
 
+    
     var objUl = document.getElementById("chatul");
     objUl.scrollTop = objUl.scrollHeight;
 });
