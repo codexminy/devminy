@@ -72,7 +72,7 @@ ul > li {
 }
 
 #today {
-    width: 7vw;
+    width: 150px;
     height: 4vh;
     text-align: center;
     border-radius: 10px 10px 10px 10px ;
@@ -109,7 +109,7 @@ ul > li {
 }
 
 #hello {
-    width: 18vw;
+    width: 320px;
     border-radius: 10px 10px 10px 0;
     /* background-color: RGB(71,76,253); */
     background-color: RGB(235,236,241);
@@ -131,7 +131,7 @@ ul > li {
 }
 
 #hello2 {
-    width: 17vw;
+    width: 300px;
     border-radius: 10px 10px 10px 0;
     /* background-color: RGB(71,76,253); */
     background-color: RGB(235,236,241);
@@ -287,7 +287,7 @@ section {
 }
 
 #ment {
-    width: 23vw;
+    width: 420px;
     border-radius: 10px 10px 10px 0;
     background-color: RGB(235,236,241);
     color: black;
@@ -534,7 +534,7 @@ section {
 }
 
 .ment2 {
-    width: 16vw;
+    width: 270px;
     border-radius: 10px 10px 10px 0;
     background-color: RGB(235,236,241);
     color: black;
@@ -569,7 +569,7 @@ section {
 }
 
 #oneteampos > ul > li:last-child {
-    width: 20vw;
+    width: 320px;
     border-radius: 10px 10px 10px 0;
     background-color: RGB(235,236,241);
     color: black;
@@ -581,7 +581,7 @@ section {
 }
 
 #oneteampos > ul > li:nth-child(2) {
-    width: 20vw;
+    width: 320px;
     border-radius: 10px 10px 10px 0;
     background-color: RGB(235,236,241);
     color: black;
@@ -597,6 +597,8 @@ section {
     margin-top: 10px;
     
 }
+
+
 
 /* ring */
 
@@ -618,10 +620,6 @@ video {
     padding-left: 0.5vw;
     animation: ment2 0.5s;
     font-size: 1.2vw;
-}
-
-a {
-    text-decoration: none;
 }
 
 /* footer btn */
@@ -650,7 +648,7 @@ footer {
 }
 
 .menuicon {
-    width: 12vw;
+    width: 200px;
     border: 1px solid RGB(145,138,138);
     text-align: center;
     line-height: 4vh;
@@ -699,7 +697,7 @@ footer {
 
 @media (min-width: 992px) and (max-width: 1199px) {
     body {
-        font-size: 0.8vw;
+        font-size: 10px;
     }
     /* // 테블릿 가로 */
 }
@@ -707,6 +705,10 @@ footer {
 @media (min-width: 1200px) {
     /* // 데스크탑 일반 */
     body {
-        font-size: 0.8vw;
+        font-size: 15px;
     }
+}
+
+a {
+    text-decoration: none;
 }

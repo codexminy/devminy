@@ -156,20 +156,9 @@ pos.addEventListener('click', (e) => {
 
     // 2. 추가할 li, div 생성
     const li = document.createElement('li');
-//     const div2 = document.createElement('div');
-//     const div = document.createElement('div');
 
-
-//       // 3. li, div에 class 추가 
    li.setAttribute('class', 'right');
-//    div.setAttribute('class', 'menuright');
-//    div2.setAttribute('class', 'blank');
-//    div.innerHTML = menu.innerText;
-//    div2.innerHTML = '';
-  
 
-   
-//    li.appendChild(div2);
    li.appendChild(oneteampos);
 
    lastli.appendChild(li);
@@ -193,8 +182,8 @@ final.addEventListener('click', (e) => {
     li2.innerText = '조금만 기다려주세요.😊';
     li.setAttribute('class','ment2');
     li2.setAttribute('class','ment2');
-    li.style.width = '7vw';
-    li2.style.width = '10vw';
+    li.style.width = '130px';
+    li2.style.width = '200px';
     li2.style.animation = 'ment2 1.2s';
     chatul.append(li);
     chatul.append(li2);
@@ -215,7 +204,7 @@ contact.addEventListener('click', (e) => {
     li2.innerText = "아이콘을 눌러주세요."
     li2.setAttribute('class','ment2');
     li2.style.animation = 'ment2 1.2s';
-    li2.style.width = '9vw';
+    li2.style.width = '170px';
     chatul.append(li);
     chatul.append(li2);
     var objUl = document.getElementById("chatul");
@@ -237,8 +226,10 @@ emaila.addEventListener('click', (e) => {
     const li = document.createElement("li");
     li.innerText = "이메일이 복사되었습니다.";
     li.setAttribute('class','ment2');
-    li.style.width = '11vw';
+    li.style.width = '200px';
     chatul.append(li);
+
+    
     var objUl = document.getElementById("chatul");
     objUl.scrollTop = objUl.scrollHeight;
 });
