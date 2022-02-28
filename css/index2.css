@@ -683,30 +683,30 @@ footer {
 
 @media (max-width: 767px){
     body {
-        font-size: 12px;
+        font-size: 30px;
     }
 
     #phone {
-        width: 550px;
+        width: 500px;
     }
     
     #chat {
-        width: 550px;
+        width: 500px;
     }
 	/* //모바일 */
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     body {
-        font-size: 15px;
+        font-size: 30px;
     }
 
     #phone {
-        width: 550px;
+        width: 500px;
     }
     /* // 테블릿 세로 */
     #chat {
-        width: 550px;
+        width: 500px;
     }
 }
 
