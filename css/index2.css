@@ -622,6 +622,8 @@ video {
     font-size: 1.2vw;
 }
 
+
+
 /* footer btn */
 footer {
     /* background-color: tomato; */
@@ -682,46 +684,279 @@ footer {
 
 
 @media (max-width: 767px){
+    html {
+        width: 600px;
+    }
     body {
-        font-size: 30px;
+        font-size: 13px;
+        width: 400px;
+        margin: 0;
+    }
+    #wrap {
+       width: 600px ;
     }
 
     #phone {
-        width: 500px;
+        width: 600px;
     }
     
     #chat {
         width: 500px;
     }
+    #chatheader {
+        width: 600px;
+    }
+    #chattitle {
+        font-size: 17px;
+    }
+
+    section {
+        width: 600px;
+    }
+
+    #chatul {
+        width: 600px;
+    }
+
+    .litoday {
+        width: 320px;
+    }
+
+    footer {
+        width: 600px;
+    }
+
+    footer > ul {
+        width: 300px;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .menuicon {
+        width: 180px;
+    }
+
+    #menuleft {
+        display: none;
+    }
+
+    .right {
+        width: 350px;
+    }
+
+    .menuright {
+        width: 150px;
+    }
+
+    #aboutmediv {
+        width: 500px;
+    }
+
+    #aboutmediv:nth-child(1) {
+        width: 200px;
+    }
+
+    .emo {
+        width: 130px;
+    }
+
+    #chartdiv {
+        width: 200px;
+    }
+
+    .chartclass {
+        width: 50px;
+        height: 70px;
+    }
+
+    .chartcenter {
+        width: 30px;
+    }
+
+    #ment {
+        width: 350px;
+    }
+    
+    .graph-wrapper {
+        width: 300px;
+    }
+
+    .graph-wrapper > h1 {
+        width: 0px;
+    }
+
+    .percent-indicator {
+        width: 300px;
+    }
+
+    .graph {
+        width: 300px;
+    }
+
+    video {
+        width: 250px;
+        height: 150px;
+    }
+
+    #contactli {
+        width: 70px;
+        font-size: 20px;
+    }
+
+
 	/* //모바일 */
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     body {
-        font-size: 30px;
+       flex-direction: column;
+       
+    }
+    #wrap {
+       width: 820px ;
+       height: 850px;
+      
     }
 
     #phone {
-        width: 500px;
+        width: 820px;
+        height: 850px;
     }
-    /* // 테블릿 세로 */
+    
     #chat {
+        width: 800px;
+    }
+    #chatheader {
+        width: 800px;
+    }
+    #chattitle {
+        font-size: 25px;
+    }
+    #hello {
+        width: 400px;
+    }
+    #hello2 {
+        width: 380px;
+    }
+
+    section {
+        width: 820px;
+        height: 570px;
+    }
+
+    #chatul {
+        width: 600px;
+        height: 570px;
+    }
+
+    .litoday {
         width: 500px;
     }
+
+    footer {
+        width: 600px;
+    }
+
+    footer > ul {
+        width: 300px;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .menuicon {
+        width: 180px;
+    }
+
+    /* #menuleft {
+        display: none;
+    } */
+
+    .right {
+        width: 490px;
+    }
+
+    .menuright {
+        width: 150px;
+    }
+
+    #aboutmediv {
+        width: 700px;
+    }
+
+    #aboutmediv:nth-child(1) {
+        width: 300px;
+    }
+
+    .emo {
+        width: 170px;
+    }
+
+    #chartdiv {
+        width: 400px;
+    }
+
+    .chartclass {
+        width: 70px;
+        height: 70px;
+    }
+
+    .chartcenter {
+        width: 45px;
+        height: 45px;
+        font-size: 17px;
+    }
+
+    #ment {
+        width: 470px;
+    }
+    
+    .ment2 {
+        width: 320px;
+    }
+
+    #gitpos {
+        width: 420px;
+    }
+
+
+    .graph-wrapper {
+        width: 300px;
+    }
+
+    .graph-wrapper > h1 {
+        width: 0px;
+    }
+
+    .percent-indicator {
+        width: 300px;
+    }
+
+    .graph {
+        width: 300px;
+    }
+
+    video {
+        width: 250px;
+        height: 150px;
+    }
+
+    #contactli {
+        width: 70px;
+        font-size: 20px;
+    }
+
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    body {
-        font-size: 15px;
-    }
+    
     /* // 테블릿 가로 */
 }
 
 @media (min-width: 1200px) {
     /* // 데스크탑 일반 */
-    body {
-        font-size: 15px;
-    }
+  
+   
+  
 }
 
 a {
