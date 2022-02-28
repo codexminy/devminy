@@ -689,23 +689,30 @@ footer {
     #phone {
         width: 550px;
     }
+    
+    #chat {
+        width: 550px;
+    }
 	/* //모바일 */
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     body {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     #phone {
         width: 550px;
     }
     /* // 테블릿 세로 */
+    #chat {
+        width: 550px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
     body {
-        font-size: 12px;
+        font-size: 15px;
     }
     /* // 테블릿 가로 */
 }
