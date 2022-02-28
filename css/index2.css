@@ -683,21 +683,29 @@ footer {
 
 @media (max-width: 767px){
     body {
-        font-size: 0.5vw;
+        font-size: 12px;
+    }
+
+    #phone {
+        width: 550px;
     }
 	/* //모바일 */
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     body {
-        font-size: 0.8vw;
+        font-size: 12px;
+    }
+
+    #phone {
+        width: 550px;
     }
     /* // 테블릿 세로 */
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
     body {
-        font-size: 10px;
+        font-size: 12px;
     }
     /* // 테블릿 가로 */
 }
